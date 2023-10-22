@@ -1,17 +1,14 @@
+import 'package:calorie_counter/features/home/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(),
+      body: const SearchLine(),
     );
   }
 
